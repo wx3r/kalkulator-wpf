@@ -1,0 +1,32 @@
+﻿<Window x:Class="logarytmapp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:logarytmapp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock FontSize="20" FontWeight="Bold" TextAlignment="Center" Foreground="LightPink">
+            Kalkulator logarytmów i ciągów.
+        </TextBlock>
+        
+        <!--obliczanie logarytmów-->
+        <TextBlock FontSize="13" FontWeight="Bold" TextAlignment="Left" Foreground="LightPink" Margin="10,57,10,-41">
+            1. Obliczanie logarytmów.
+        </TextBlock>
+        <TextBlock FontSize="40" FontWeight="Bold" TextAlignment="Left" Foreground="LightPink" Margin="10,82,98,233">
+            log
+        </TextBlock>
+        <TextBox MaxLength="200" RenderTransformOrigin="-5.313,-2.299" TextChanged="TextBox_TextChanged" Margin="80,122,691,292"/>
+        <TextBox Width="30" MaxLength="200" Height="20" RenderTransformOrigin="-5.313,-2.299" TextChanged="TextBox_TextChanged" Margin="130,101,640,313"/>
+        <Button Width="40" Height="20" Background="LightBlue" Margin="181,106,579,308" Click="Button_Click" >
+            Oblicz
+        </Button>
+        
+        <!--działania na logarytmach-->
+        <TextBlock FontSize="13" FontWeight="Bold" TextAlignment="Left" Foreground="LightPink" Margin="10,170,10,-155">
+            2. Działania na logarytmach.
+        </TextBlock>
+    </Grid>
+</Window>
